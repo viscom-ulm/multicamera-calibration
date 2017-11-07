@@ -27,6 +27,16 @@ Then open Visual Studio and build the solution.
 
 ### Usage
 ```
+Usage: ./multicalibration -[m|c|v|e|w|h|tc] calibration_result.xml file_list.xml
+m - min matches (default 100)
+v - verbose (default false)
+e - show feature extraction (default false)
+tc - termination count (default 10)
+c - number of cameras
+w - physical width of pattern in user defined unit (usually mm)
+h - physical height of pattern in user defined unit (usually mm)
+
+
 ./multicalibration.exe -c=36 -w=108 -h=82 calibration.xml images.xml
 ```
 
