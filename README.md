@@ -25,6 +25,12 @@ cmake .. -G "Visual Studio 15 2017 Win64"
 
 Then open Visual Studio and build the solution.
 
+### Usage
+```
+./multicalibration.exe -c=36 -w=108 -h=82 calibration.xml images.xml
+```
+
+
 ## Authors
 
 * **Sebastian Hartwig**
