@@ -37,7 +37,23 @@ w - physical width of pattern in user defined unit (usually mm)
 h - physical height of pattern in user defined unit (usually mm)
 
 
-./multicalibration.exe -c=36 -w=108 -h=82 calibration.xml images.xml
+$ ./multicalibration.exe -c=36 -w=109 -h=82 all_images.xml calibration.xml
+camera_count=36
+patternWidth=109
+patternHeight=82
+initialized for camera 0 rms = 1.25491
+initialized camera matrix for camera 0 is
+[1854.2043, 0, 1063.5328;
+ 0, 1856.4719, 801.8584;
+ 0, 0, 1]
+xi for camera 0 is []
+initialized for camera 1 rms = 1.34718
+initialized camera matrix for camera 1 is
+[1841.5892, 0, 1050.0885;
+ 0, 1842.4463, 774.03088;
+ 0, 0, 1]
+xi for camera 1 is []
+...
 ```
 
 
