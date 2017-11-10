@@ -33,8 +33,8 @@ v - verbose (default false)
 e - show feature extraction (default false)
 tc - termination count (default 10)
 c - number of cameras
-w - physical width of pattern in user defined unit (usually mm)
-h - physical height of pattern in user defined unit (usually mm)
+w - physical width of pattern in user defined unit (usually cm)
+h - physical height of pattern in user defined unit (usually cm)
 
 
 $ ./multicalibration.exe -c=36 -w=109 -h=82 all_images.xml calibration.xml
