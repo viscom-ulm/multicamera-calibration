@@ -35,8 +35,8 @@ int main(int argc, char** argv)
 	int patternHeight;
 
 	cv::CommandLineParser parser(argc, argv,
-		"{m|100|}{c||}{v|0|}{e|0|}{w||}{h||}{tc|10|}{@output||}"
-		"{@input||}");
+		"{m|100|}{c||}{v|0|}{e|0|}{w||}{h||}{tc|10|}{@input||}"
+		"{@output||}");
 
 	camera_count = parser.get<int>("c");
 	verbose = parser.get<int>("v");
@@ -54,7 +54,7 @@ int main(int argc, char** argv)
 	outputFilename = parser.get<std::string>("@output");
 	if (!parser.check())
 	{
-		std::cout << "Usage: ./multicalibration -[m|c|v|e|w|h|tc] calibration_result.xml file_list.xml\nm - min matches (default 100)\nv - verbose (default false)\ne - show feature extraction (default false)\ntc - termination count (default 10)\nc - number of cameras\nw - physical width of pattern in user defined unit (usually mm)\nh - physical height of pattern in user defined unit (usually mm)" << std::endl;
+		std::cout << "Usage: ./multicalibration -[m|c|v|e|w|h|tc] file_list.xml calibration_result.xml\nm - min matches (default 100)\nv - verbose (default false)\ne - show feature extraction (default false)\ntc - termination count (default 10)\nc - number of cameras\nw - physical width of pattern in user defined unit (usually mm)\nh - physical height of pattern in user defined unit (usually mm)" << std::endl;
 		parser.printErrors();
 		return -1;
 	}
