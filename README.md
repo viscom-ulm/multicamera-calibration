@@ -17,7 +17,7 @@ Install OpenCV (3.2) + contrib module
 Clone, Build, Compile.
 
 ```
-git clone https://gitlab-mi.informatik.uni-ulm.de/ifr97/multicamera-calibration.git
+git clone https://github.com/viscom-ulm/multicamera-calibration.git
 cd multicamera-calibration
 mkdir build && cd build
 cmake .. -G "Visual Studio 15 2017 Win64"
